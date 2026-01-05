@@ -1,0 +1,37 @@
+# EditorConfig для единого стиля кодирования
+# https://editorconfig.org
+
+root = true
+
+# Все файлы
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Java файлы
+[*.java]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# XML файлы (POM, конфиги)
+[*.xml]
+indent_style = space
+indent_size = 4
+
+# Properties файлы
+[*.properties]
+indent_style = space
+indent_size = 2
+
+# YAML файлы (GitHub Actions)
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Markdown файлы
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
